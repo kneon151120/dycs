@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dycs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__left">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="navbar__middle">
+                        <div class="navbar__middle-list">
+                            <img src="img/burge.svg" alt="">
+                            <h3 class="navbar__middle-list-text">Каталог</h3>
+                        </div>
+                        <div class="navbar__middle-search">
+                            <input type="text" placeholder="Найти товары">
+                            <button>Найти</button>
+                        </div>
+                    </div>
+                    <div class="navbar__right">
+                        <div class="navbar__right-heart">
+                            <a href="#"><img src="img/heart.svg" alt=""></a>
+                            <h4>Избранное</h4>
+                        </div>
+                        <div class="navbar__right-else">
+                            <button class="button" onclick="toggleTabs()">Ещё</button>
+        <div class="tabs" id="tabs">
+            <div class="tab">Услуги</div>
+            <div class="tab">Обучение</div>
+            <div class="tab">Помощь студентам</div>
+        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medianav">
+            <div class="container">
+                <div class="medianav__up">
+                    <div class="medianav__up-left">
+                        <img src="img/media-logo.svg" alt="" class="medianav__up-left-logo">
+                        <h3 class="medianav__up-left-city">Москва <img src="img/arrow.svg" alt=""></h3>
+                    </div>
+                    <button class="medianav__up-enter">Вход</button>
+                </div>
+                <input type="text" class="medianav__down-search" placeholder="Найти товары">        
+            </div>
+        </div>
+        <div class="header__category">
+            <div class="container">
+                 <div class="header__li">
+            <ul class="category-list">
+                <li class="category-item">Авто<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Автозапчасти</li>
+                        <li class="subcategory-item">Автотовары и оборудование</li>
+                        <li class="subcategory-item">Автоинструменты и оборудование для гаража</li>
+                    </ul>
+                </li>
+                <li class="category-item">Красота<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Уход за волосами</li>
+                        </ul>
+                    </li>
+                <li class="category-item">Бытовая техника<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Мелкая бытовая техника</li>
+                        <li class="subcategory-item">Крупная бытовая техника</li>
+                        <li class="subcategory-item">Техника для кухни</li>
+                    </ul>
+                </li>
+                <li class="category-item">Дом<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Умный дом</li>
+                        <li class="subcategory-item">Посуда</li>
+                    </ul>
+                </li>
+                <li class="category-item">ЗДОРОВЬЕ<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">АЛКОГОЛИЗМ И НИКОТИНОВОЯ ЗАВИСИМОСТЬ</li>
+                        <li class="subcategory-item">АНТИБИОТИКИ И СУЛЬФАНИЛАМИДЫ</li>
+                        <li class="subcategory-item">АЛЛЕРГИЯ</li>
+                        <li class="subcategory-item">ВИТАМИНЫ И ТОНИЗИРУЮЩИЕ СРЕДСТВА</li>
+                    </ul>
+                </li>
+                <li class="category-item">ИНСТРУМЕНТЫ<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">СТАНКИ</li>
+                        <li class="subcategory-item">РУЧНОЙ ИНСТРУМЕНТ</li>
+                        <li class="subcategory-item">ЭЛЕКТРОИНСТРУМЕНТ</li>
+                        <li class="subcategory-item">САНТЕХНИЧЕСКИЙ СПЕЦИНСТРУМЕНТ</li>
+                        <li class="subcategory-item">ГЕНЕРАТОРЫ ЭЛЕКТРОСТАНЦИИ</li>
+                    </ul>
+                </li>
+                <li class="category-item">ОДЕЖДА<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">ДЕТСКАЯ ОДЕЖДА</li>
+                        <li class="subcategory-item">НОВИНКИ</li>
+                    </ul>
+                </li>
+                <li class="category-item">ЭЛЕКТРОНИКА<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">СМАРТФОНЫ</li>
+                    </ul>
+                </li>
+                <li class="category-item">БАГАЖ<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">РЮКЗАКИ</li>
+                        <li class="subcategory-item">СУМКИ</li>
+                        <li class="subcategory-item">ЧЕМОДАНЫ</li>
+                    </ul>
+                </li>
+                <li class="category-item">СТРОИТЕЛЬСТВО И РЕМОНТ<img src="img/arrow.svg" alt="" class="category__arrow">
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">САНТЕХНИКА</li>
+                        <li class="subcategory-item">ВОДОСНАБЖЕНИЕ И ОТОПЛЕНИЕ</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+            </div>
+        </div>
+        <div class="bottom-menu">
+            <img src="img/bottommenu/iconamoon_home-bold.svg" alt="Главная" class="menu-icon">
+            <img src="img/bottommenu/search.svg" alt="Поиск" class="menu-icon">
+            <img src="img/bottommenu/iconamoon_heart-bold.svg" alt="Избранное" class="menu-icon">
+            <img src="img/bottommenu/korzinka.svg" alt="Корзина" class="menu-icon">
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <section class="sale">
+            <div class="container">
+                <div class="slider-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/first sale.png" alt="Фото 1"></div>
+                            <div class="swiper-slide"><img src="img/second sale.png" alt="Фото 2"></div>
+                        </div>
+                        <!-- Навигация -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer media-offer">
+            <div class="container">
+                <h1 class="offer__title">Специальные предложения</h1>
+                <div class="offer__grid">
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="custom-slider">
+                                <div class="slider-wrapper">
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                                </div>
+                                <div class="indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        
+                                <!-- Сердечко -->
+                                <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                                <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                            <p class="product-price">34 990,00 ₽</p>
+                            <button class="buy-button">Купить</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="custom-slider">
+                                    <div class="slider-wrapper">
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 1"></div>
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 2"></div>
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 3"></div>
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 4"></div>
+                                    </div>
+                                    <div class="indicators">
+                                        <span class="indicator active"></span>
+                                        <span class="indicator"></span>
+                                        <span class="indicator"></span>
+                                        <span class="indicator"></span>
+                                    </div>
+                                </div>
+                            
+                                    <!-- Сердечко -->
+                                    <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                                    <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                                <p class="product-price">34 990,00 ₽</p>
+                                <button class="buy-button">Купить</button>
+                                </div>
+                </div>
+            </div>
+        </section>
+        <section class="good">
+            <div class="container">
+                <div class="good__grid">
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Frame 373938731.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Frame 373938731.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Frame 373938731.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Frame 373938731.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-xiaomi-redmi-13c-4-128-gb-midnight-black-1-1 1.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-xiaomi-redmi-13c-4-128-gb-midnight-black-1-1 1.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-xiaomi-redmi-13c-4-128-gb-midnight-black-1-1 1.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-xiaomi-redmi-13c-4-128-gb-midnight-black-1-1 1.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Аккумуляторная дрель-шуруповерт Makita DHP485Z</h3>
+                        <p class="product-price">11 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Аккумуляторная дрель-шуруповерт №1 CDI 12/1,5-SPRO</h3>
+                        <p class="product-price">5 019,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/600-21049626193-1-1 1.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/600-21049626193-1-1 1.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/600-21049626193-1-1 1.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/600-21049626193-1-1 1.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 101.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 101.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 101.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 101.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Бочка 10 л SECRET 45 PARALLEL, акация (Румыния)</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 106.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 106.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 106.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 106.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 107.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 107.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 107.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 107.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Сумка.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Сумка.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Сумка.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Сумка.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Сумка Ninetygo Urban Eusing Plus, серая</h3>
+                        <p class="product-price">4 586,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Шампунь для ежедневного ухода.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Шампунь для ежедневного ухода.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Шампунь для ежедневного ухода.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Шампунь для ежедневного ухода.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Шампунь для ежедневного ухода Daily Haircare Epica</h3>
+                        <p class="product-price">540,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Смартфон HONOR.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Смартфон HONOR.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Смартфон HONOR.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Смартфон HONOR.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR X5 Plus 4/64 GB Black</h3>
+                        <p class="product-price">7 985,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="custom-slider">
+                                <div class="slider-wrapper">
+                                    <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 1"></div>
+                                    <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 2"></div>
+                                    <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 3"></div>
+                                    <div class="slide"><img src="img/goods/HP002GZ_01 1.png" alt="Фото 4"></div>
+                                </div>
+                                <div class="indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        
+                                <!-- Сердечко -->
+                                <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                                <h3 class="product-title">Аккумуляторная дрель-шуруповерт Makita DHP485Z</h3>
+                            <p class="product-price">11 990,00 ₽</p>
+                            <button class="buy-button">Купить</button>
+                            </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Чайник Viomi.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Чайник Viomi.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Чайник Viomi.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Чайник Viomi.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Чайник Viomi Double-layer Kettle Electric Whit</h3>
+                        <p class="product-price">2 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон Xiaomi Redmi 12C 4/128GB Lavender Purple</h3>
+                        <p class="product-price">20 985,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Смартфон Xiaomi (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон Xiaomi 13 Lite 8/256 GB Black</h3>
+                        <p class="product-price">34 795,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Компрессор автомобильный.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Компрессор автомобильный.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Компрессор автомобильный.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Компрессор автомобильный.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Компрессор автомобильный Fubag Roll Air 40/15 68641226</h3>
+                        <p class="product-price">4 045,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/Набор инструмента.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/Набор инструмента.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/Набор инструмента.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/Набор инструмента.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Набор инструмента Арсенал C 108 пр. 8144900</h3>
+                        <p class="product-price">11 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/дрель-шуруповерт.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/дрель-шуруповерт.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/дрель-шуруповерт.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/дрель-шуруповерт.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Аккумуляторная дрель-шуруповерт Интерскол ДА-12ЭР Li-ion 2АКБ 434.2.2.20</h3>
+                        <p class="product-price">4 109,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/128.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/128.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/128.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/128.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR X9A 6/128 5109ALXS Green</h3>
+                        <p class="product-price">18 985,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="custom-slider">
+                                <div class="slider-wrapper">
+                                    <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 1"></div>
+                                    <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 2"></div>
+                                    <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 3"></div>
+                                    <div class="slide"><img src="img/goods/600-4411029 1.png" alt="Фото 4"></div>
+                                </div>
+                                <div class="indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        
+                                <!-- Сердечко -->
+                                <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                                <h3 class="product-title">Аккумуляторная дрель-шуруповерт №1 CDI 12/1,5-SPRO</h3>
+                            <p class="product-price">5 019,00 ₽</p>
+                            <button class="buy-button">Купить</button>
+                            </div>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <h1 class="offer__title">Специальные предложения</h1>
+                <div class="offer__grid">
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="custom-slider">
+                                <div class="slider-wrapper">
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                    <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                                </div>
+                                <div class="indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                        
+                                <!-- Сердечко -->
+                                <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                                <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                            <p class="product-price">34 990,00 ₽</p>
+                            <button class="buy-button">Купить</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="custom-slider">
+                                    <div class="slider-wrapper">
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 1"></div>
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 2"></div>
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 3"></div>
+                                        <div class="slide"><img src="img/goods/honor-x5-plus-4-64-5109atfq-black-1-1-1-1-1-1-1 1.png" alt="Фото 4"></div>
+                                    </div>
+                                    <div class="indicators">
+                                        <span class="indicator active"></span>
+                                        <span class="indicator"></span>
+                                        <span class="indicator"></span>
+                                        <span class="indicator"></span>
+                                    </div>
+                                </div>
+                            
+                                    <!-- Сердечко -->
+                                    <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                                    <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                                <p class="product-price">34 990,00 ₽</p>
+                                <button class="buy-button">Купить</button>
+                                </div>
+                </div>
+            </div>
+        </section>
+        <section class="seen">
+            <div class="container">
+                <h1 class="seen__title">Просмотренные</h1>
+                <div class="seen__grid">
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 105.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/image 104.png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                    <div class="product-card">
+                        <div class="custom-slider">
+                            <div class="slider-wrapper">
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 1"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 2"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 3"></div>
+                                <div class="slide"><img src="img/goods/smartfon-honor-90-12-512-gb-black-polnochnyy-chyernyy-1-1-1 1 (1).png" alt="Фото 4"></div>
+                            </div>
+                            <div class="indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                    
+                            <!-- Сердечко -->
+                            <div class="favorite-icon"><img src="img/heart.svg" alt=""></div>
+                            <h3 class="product-title">Смартфон HONOR 90 12/512 GB Black, полночный чёрный</h3>
+                        <p class="product-price">34 990,00 ₽</p>
+                        <button class="buy-button">Купить</button>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                    <div class="footer__box">
+                        <div class="footer__box-first">
+                            <img src="img/footer-logo.svg" alt="">
+                        </div>
+                        <div class="footer__box-second">
+                            <h2 class="footer__box-second-title">Категории</h2>
+                            <ul class="footer__box-second-list">
+                                <li class="footer__box-second-link">Авто<a href="#"></a></li>
+                                <li class="footer__box-second-link">Красота<a href="#"></a></li>
+                                <li class="footer__box-second-link">Здоровье<a href="#"></a></li>
+                                <li class="footer__box-second-link">Электроника<a href="#"></a></li>
+                                <li class="footer__box-second-link">Бытовая техника<a href="#"></a></li>
+                                <li class="footer__box-second-link">Дом<a href="#"></a></li>
+                                <li class="footer__box-second-link">Одежда<a href="#"></a></li>
+                                <li class="footer__box-second-link">Багаж<a href="#"></a></li>
+                                <li class="footer__box-second-link">Строительство и ремонт<a href="#"></a></li>
+                            </ul>
+                            </div>
+                        <div class="footer__box-third">
+                            <h2 class="footer__box-second-title">Сайт</h2>
+                            <ul class="footer__box-second-list">
+                                <li class="footer__box-second-link">Контакты<a href="#"></a></li>
+                                <li class="footer__box-second-link">Карта сайта<a href="#"></a></li>
+                                <li class="footer__box-second-link">Личный кабинет<a href="#"></a></li>
+                                <li class="footer__box-second-link">Возврат денег<a href="#"></a></li>
+                                <li class="footer__box-second-link">Онлайн обучениег<a href="#"></a></li>
+                                <li class="footer__box-second-link">Помощь студентам<a href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__box-fourth">
+                            <h2 class="footer__box-fourth-title">Мы в социальных сетях:</h2>
+                            <div class="footer__box-fourt-container">
+                                <a href="#"><img src="img/hugeicons_vk.svg" alt=""></a>
+                                <a href="#"><img src="img/basil_telegram-outline.svg" alt=""></a>
+                                <a href="#"><img src="img/iconoir_whatsapp.svg" alt=""></a>
+                            </div>
+                            <p class="footer__box-fourt-politics">Политика конфиденциальности</p>
+                        </div>
+                </div>
+          </div>
+            <div class="footer__down">
+                <img src="img/footer-down.svg" alt="" class="footer__down-img">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
