@@ -138,14 +138,14 @@ text-align: center;
 .category-list{
   display: flex;
   justify-content: space-between;
-  
+  margin-top: 20px;
 }
 .category-item {
   position: relative;
   cursor: pointer;
   display: flex;
   color: rgba(0, 26, 52, 0.9);
-font-family: 'MontserratRegular';
+font-family: 'MontserratBold';
 font-size: 14px;
 text-transform: uppercase;
 letter-spacing: 0%;
@@ -350,6 +350,12 @@ margin-bottom: 150px;
   padding-bottom: 51px;
   border-bottom: 1px solid white;
   margin-bottom: 20px;
+}
+.footer__box-first{
+  background: white;
+  padding: 10px;
+  height: 85px;
+  border-radius: 10px;
 }
 .footer__box-second-title{
   color: rgba(255, 255, 255, 0.9);
