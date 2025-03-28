@@ -85,15 +85,24 @@ border: none;
 }
 
   .header__category{
-    overflow-x: scroll;
-    -ms-overflow-style: none;  /* Убираем скролл в IE и Edge */
-    scrollbar-width: none;  /* Убираем скролл в Firefox */
+    position: relative; /* Чтобы абсолютные элементы могли выходить за границы */
     margin-top: 50px;
   }
-  .header__category::-webkit-scrollbar{
+  .category-list{
+    overflow-x: auto; /* Оставляем горизонтальную прокрутку */
+    overflow-y: visible !important; /* Делаем так, чтобы по высоте ничего не скрывалось */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    padding-bottom: 50px;
+  }
+  .category-list::-webkit-scrollbar{
     overflow-x: scroll;
     display: none;
   }
+  .subcategory__list{
+    z-index: 100;
+  }
+
   .footer{
     display: none;
   }
